@@ -86,7 +86,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -101,21 +100,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,65 +118,7 @@ q:after {
   content: '';
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-::-moz-selection {
-  color: #1f1f1f;
-  background: #99e2d0;
-}
-
-::selection {
-  color: #1f1f1f;
-  background: #99e2d0;
-}
-
-h1,
-h2 {
-  font-family: 'Shrikhand', cursive;
-}
-
-.main-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.main-container > * {
-  min-width: 100%;
-}
-
-.container {
-  margin: 1rem 0.4rem;
-}
-
-@media (min-width: 850px) {
-  .main-container {
-    position: relative;
-    max-width: 1280px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .container {
-    margin: 2rem 1rem;
-  }
 }
