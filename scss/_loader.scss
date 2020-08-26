@@ -1,0 +1,39 @@
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  opacity: 0%;
+  animation: loading 3s linear;
+  pointer-events: none;
+}
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  border: 1px solid $primary;
+  border-top: 3px solid $secondary;
+  border-radius: 50%;
+  animation: spinning 3s linear;
+  pointer-events: none;
+}
+@keyframes loading {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes spinning {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(1440deg);
+  }
+}

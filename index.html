@@ -4,11 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oh My Food - Home</title>
-    <link rel="stylesheet" href="main.css" />
+    <meta
+      name="description"
+      content="Welcome to Oh my food! This is our home page"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/97e3147ee9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="main-container">
+        <!--
+        ! LOADER !
+      -->
+        <div class="loader-container">
+          <span class="loader"></span>
+        </div>
+        <!--
+        ! HEADER !
+      -->
+        <header class="main-header">
+          <div class="container logo-container">
+            <a href="/"
+              ><img class="logo" src="/assets/img/logo.svg" alt="ohmyfood logo"
+            /></a>
+          </div>
+        </header>
+        <!--
+        ! SECTION LOCATION !
+      -->
+        <section class="section-location">
+          <div class="container">
+            <span class="icon fas fa-map-marker-alt"></span>
+            Paris, Belleville
+          </div>
+        </section>
+        <!--
+        ! SECTION CALL TO ACTION !
+      -->
+        <section class="main-sections section-cta">
+          <h3 class="section-cta__header big-header">Book the menu you like</h3>
+          <p class="section-cta__parag">
+            Discover top-of-the-art restaurants we picked for you
+          </p>
+          <a class="section-cta__btn" href="#"> Explore our restaurants</a>
+        </section>
+        <!--
+        ! SECTION TUTO !
+      -->
+        <section class="main-sections section-tuto">
+          <h3 class="section-tuto__header big-header">How it works</h3>
+          <!--? small card 1 ?-->
+          <div class="section-tuto__card small-card">
+            <span class="section-tuto__number">1</span>
+            <span class="section-tuto__icon icon fas fa-mobile-alt"></span>
+            Choose a restaurant
+          </div>
+          <!--? small card 2 ?-->
+          <div class="section-tuto__card small-card">
+            <span class="section-tuto__number">2</span>
+            <span class="section-tuto__icon icon fas fa-list-ul"></span>
+            Create your menu
+          </div>
+          <!--? small card 3 ?-->
+          <div class="section-tuto__card section-tuto__card--purple small-card">
+            <span class="section-tuto__number">3</span>
+            <span
+              class="section-tuto__icon section-tuto__icon--purple icon fas fa-store"
+            ></span>
+            Go enjoy it at the restaurant
+          </div>
+        </section>
+        <!--
+        ! SECTION RESTAURANTS !
+      --></div>
+    </div>
+  </body>
 </html>
