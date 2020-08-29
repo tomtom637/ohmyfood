@@ -259,12 +259,13 @@ a {
   }
 }
 
-.logo-container {
+.main-header {
+  padding: 0.5rem;
   -webkit-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.6);
           box-shadow: 0 4px 3px rgba(0, 0, 0, 0.6);
 }
 
-.logo {
+.main-header__logo {
   height: 1.6rem;
 }
 
@@ -278,7 +279,6 @@ a {
 .big-header {
   font-weight: 700;
   font-size: 1.2rem;
-  margin-bottom: 1.3rem;
 }
 
 .small-card {
@@ -343,6 +343,10 @@ a {
   font-weight: 700;
 }
 
+.section-tuto__header {
+  margin-bottom: 1.3rem;
+}
+
 .section-tuto__card {
   position: relative;
   margin-bottom: 1.1rem;
@@ -378,10 +382,24 @@ a {
   background: #f6f6f6f6;
 }
 
+.section-restaurants__header {
+  margin-bottom: 1.3rem;
+}
+
+.section-restaurants__cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .section-restaurants__card {
   position: relative;
   background: #fff;
   border-radius: 0.8rem;
+  margin-bottom: 0.9rem;
+  max-width: 350px;
 }
 
 .section-restaurants__new {
@@ -396,13 +414,31 @@ a {
   top: 13px;
 }
 
-.section-restaurants img {
+.section-restaurants__image {
   height: 8.5rem;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.section-restaurants__image--the-full-palette {
   -o-object-position: 0 100%;
      object-position: 0 100%;
-  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.section-restaurants__image--the-enchanted-plate {
+  -o-object-position: 0 60%;
+     object-position: 0 60%;
+}
+
+.section-restaurants__image--bastille {
+  -o-object-position: 0 90%;
+     object-position: 0 90%;
+}
+
+.section-restaurants__image--le-gourmand {
+  -o-object-position: 0 85%;
+     object-position: 0 85%;
 }
 
 .section-restaurants__card-footer {
@@ -430,7 +466,7 @@ a {
 
 .section-restaurants__name {
   margin-bottom: 0.3rem;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 0.9rem;
 }
 
@@ -439,30 +475,65 @@ a {
   color: #353535;
 }
 
-.section-restaurants__empty-heart {
-  color: #9356dc;
+.section-restaurants__heart-container {
   -webkit-transform: scaleY(1.2);
           transform: scaleY(1.2);
+}
+
+.section-restaurants__checkbox {
   display: none;
 }
 
-.section-restaurants__full-heart-container {
-  position: absolute;
-  right: 15.2px;
-  bottom: 1.47rem;
-  color: #ff79da;
-  -webkit-transform: scaleY(1.2);
-          transform: scaleY(1.2);
-}
-
-.section-restaurants__full-heart-container:hover .section-restaurants__full-heart {
+.section-restaurants__checkbox:checked ~ .section-restaurants__full-heart {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition: all 800ms ease-in-out;
   transition: all 800ms ease-in-out;
 }
 
+.section-restaurants__empty-heart {
+  color: #9356dc;
+  display: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.section-restaurants__empty-heart:hover {
+  color: #ff79da;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 .section-restaurants__full-heart {
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  position: absolute;
+  right: 0;
+  color: #ff79da;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  cursor: pointer;
+}
+
+.footer {
+  background: #353535;
+  color: #fff;
+  padding: 1.4rem;
+}
+
+.footer__brand {
+  padding-bottom: 1.4rem;
+}
+
+.footer__nav {
+  font-size: 0.8rem;
+}
+
+.footer__li {
+  margin-bottom: 0.6rem;
+}
+
+.footer__logo {
+  padding-right: 0.5rem;
+  font-size: 0.7rem;
+  max-width: 1.1rem;
 }

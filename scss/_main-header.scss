@@ -1,2 +1,8 @@
 .main-header {
+  padding: 0.5rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.6);
+
+  &__logo {
+    height: 1.6rem;
+  }
 }

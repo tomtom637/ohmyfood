@@ -1,10 +1,21 @@
 .section-restaurants {
   background: $light-grey;
 
+  &__header {
+    margin-bottom: 1.3rem;
+  }
+
+  &__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &__card {
     position: relative;
     background: #fff;
     border-radius: 0.8rem;
+    margin-bottom: 0.9rem;
+    max-width: 350px;
   }
 
   &__new {
@@ -19,11 +30,26 @@
     top: 13px;
   }
 
-  & img {
+  &__image {
     height: 8.5rem;
     object-fit: cover;
-    object-position: 0 100%;
     border-radius: 0.8rem 0.8rem 0 0;
+
+    &--the-full-palette {
+      object-position: 0 100%;
+    }
+
+    &--the-enchanted-plate {
+      object-position: 0 60%;
+    }
+
+    &--bastille {
+      object-position: 0 90%;
+    }
+
+    &--le-gourmand {
+      object-position: 0 85%;
+    }
   }
 
   &__card-footer {
@@ -40,7 +66,7 @@
 
   &__name {
     margin-bottom: 0.3rem;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 0.9rem;
   }
 
@@ -49,26 +75,36 @@
     color: $light-black;
   }
 
-  &__empty-heart {
-    color: $primary;
+  &__heart-container {
     transform: scaleY(1.2);
-    display: none;
   }
 
-  &__full-heart-container {
-    position: absolute;
-    right: 15.2px;
-    bottom: 1.47rem;
-    color: $secondary;
-    transform: scaleY(1.2);
+  &__checkbox {
+    display: none;
 
-    &:hover .section-restaurants__full-heart {
+    &:checked ~ .section-restaurants__full-heart {
       transform: scale(1.05);
       transition: all 800ms ease-in-out;
     }
   }
 
+  &__empty-heart {
+    color: $primary;
+    display: none;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary;
+      transform: rotateY(180deg);
+    }
+  }
+
   &__full-heart {
-    transform: scale(0);
+    position: absolute;
+    right: 0;
+    color: $secondary;
+    transform: scaleY(0);
+    cursor: pointer;
   }
 }

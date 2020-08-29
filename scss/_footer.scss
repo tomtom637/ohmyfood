@@ -1,0 +1,26 @@
+.footer {
+  background: $light-black;
+  color: #fff;
+  padding: 1.4rem;
+
+  &__brand {
+    padding-bottom: 1.4rem;
+  }
+
+  &__nav {
+    font-size: 0.8rem;
+  }
+
+  &__ul {
+  }
+
+  &__li {
+    margin-bottom: 0.6rem;
+  }
+
+  &__logo {
+    padding-right: 0.5rem;
+    font-size: 0.7rem;
+    max-width: 1.1rem;
+  }
+}
