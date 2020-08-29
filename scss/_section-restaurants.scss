@@ -1,0 +1,74 @@
+.section-restaurants {
+  background: $light-grey;
+
+  &__card {
+    position: relative;
+    background: #fff;
+    border-radius: 0.8rem;
+  }
+
+  &__new {
+    position: absolute;
+    background: $tertiary;
+    color: #047c5e;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.2rem;
+    right: 13px;
+    top: 13px;
+  }
+
+  & img {
+    height: 8.5rem;
+    object-fit: cover;
+    object-position: 0 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+
+  &__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &__captions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  &__location {
+    font-size: 0.9rem;
+    color: $light-black;
+  }
+
+  &__empty-heart {
+    color: $primary;
+    transform: scaleY(1.2);
+    display: none;
+  }
+
+  &__full-heart-container {
+    position: absolute;
+    right: 15.2px;
+    bottom: 1.47rem;
+    color: $secondary;
+    transform: scaleY(1.2);
+
+    &:hover .section-restaurants__full-heart {
+      transform: scale(1.05);
+      transition: all 800ms ease-in-out;
+    }
+  }
+
+  &__full-heart {
+    transform: scale(0);
+  }
+}

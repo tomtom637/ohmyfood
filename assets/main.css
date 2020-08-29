@@ -278,6 +278,7 @@ a {
 .big-header {
   font-weight: 700;
   font-size: 1.2rem;
+  margin-bottom: 1.3rem;
 }
 
 .small-card {
@@ -342,10 +343,6 @@ a {
   font-weight: 700;
 }
 
-.section-tuto__header {
-  margin-bottom: 1.3rem;
-}
-
 .section-tuto__card {
   position: relative;
   margin-bottom: 1.1rem;
@@ -375,4 +372,97 @@ a {
 
 .section-tuto__icon--purple {
   color: #9356dc;
+}
+
+.section-restaurants {
+  background: #f6f6f6f6;
+}
+
+.section-restaurants__card {
+  position: relative;
+  background: #fff;
+  border-radius: 0.8rem;
+}
+
+.section-restaurants__new {
+  position: absolute;
+  background: #99e2d0;
+  color: #047c5e;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.2rem;
+  right: 13px;
+  top: 13px;
+}
+
+.section-restaurants img {
+  height: 8.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 100%;
+     object-position: 0 100%;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.section-restaurants__card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.section-restaurants__captions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-restaurants__name {
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.section-restaurants__location {
+  font-size: 0.9rem;
+  color: #353535;
+}
+
+.section-restaurants__empty-heart {
+  color: #9356dc;
+  -webkit-transform: scaleY(1.2);
+          transform: scaleY(1.2);
+  display: none;
+}
+
+.section-restaurants__full-heart-container {
+  position: absolute;
+  right: 15.2px;
+  bottom: 1.47rem;
+  color: #ff79da;
+  -webkit-transform: scaleY(1.2);
+          transform: scaleY(1.2);
+}
+
+.section-restaurants__full-heart-container:hover .section-restaurants__full-heart {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+}
+
+.section-restaurants__full-heart {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }

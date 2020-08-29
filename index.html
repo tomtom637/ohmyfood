@@ -84,7 +84,44 @@
         </section>
         <!--
         ! SECTION RESTAURANTS !
-      --></div>
+      -->
+        <section class="main-sections section-restaurants">
+          <h3 class="section-restaurants__header big-header">Restaurants</h3>
+          <!--? big card 1 ?-->
+          <div class="section-restaurants__card">
+            <span class="section-restaurants__new">New</span>
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="assets/img/the-full-palette-big.jpg"
+              />
+              <source
+                media="(min-width: 700px)"
+                srcset="assets/img/the-full-palette-medium.jpg"
+              />
+              <source srcset="assets/img/the-full-palette-small.jpg" />
+              <img src="assets/img/the-full-palette-big.jpg" alt="ok" />
+            </picture>
+            <div class="section-restaurants__card-footer">
+              <div class="section-restaurants__captions">
+                <span class="section-restaurants__name">
+                  The Full Palette
+                </span>
+                <span class="section-restaurants__location"> New York </span>
+              </div>
+              <span
+                class="section-restaurants__empty-heart far fa-heart"
+              ></span>
+              <div class="section-restaurants__full-heart-container">
+                <span
+                  class="section-restaurants__full-heart fas fa-heart"
+                ></span>
+              </div>
+            </div>
+          </div>
+          <!--? big card 2 ?-->
+        </section>
+      </div>
     </div>
   </body>
 </html>
