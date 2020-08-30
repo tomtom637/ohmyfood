@@ -1,0 +1,13 @@
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $mama-bear) {
+  .split {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+  }
+}

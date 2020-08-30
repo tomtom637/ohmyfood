@@ -6,3 +6,23 @@
     height: 1.6rem;
   }
 }
+
+@media (min-width: $baby-bear) {
+  .main-header {
+    padding: 1.5rem;
+
+    &__logo {
+      height: 2.1rem;
+    }
+  }
+}
+
+@media (min-width: $mama-bear) {
+  .main-header {
+    padding: 0;
+    box-shadow: none;
+
+    &__logo {
+    }
+  }
+}

@@ -134,6 +134,7 @@ html {
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   color: #101010;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -170,25 +171,18 @@ a {
 }
 
 .wrapper {
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 100%;
+  height: 100%;
 }
 
 .container {
-  padding: 0.7rem 0.9rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 690px) {
+  .container {
+    padding: 0 4rem;
+  }
 }
 
 .loader-container {
@@ -259,6 +253,32 @@ a {
   }
 }
 
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 690px) {
+  .split {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 5rem;
+  }
+}
+
 .main-header {
   padding: 0.5rem;
   -webkit-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.6);
@@ -267,6 +287,23 @@ a {
 
 .main-header__logo {
   height: 1.6rem;
+}
+
+@media (min-width: 390px) {
+  .main-header {
+    padding: 1.5rem;
+  }
+  .main-header__logo {
+    height: 2.1rem;
+  }
+}
+
+@media (min-width: 690px) {
+  .main-header {
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 .icon {
@@ -281,16 +318,41 @@ a {
   font-size: 1.2rem;
 }
 
+@media (min-width: 390px) {
+  .big-header {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 690px) {
+  .big-header {
+    font-size: 3rem;
+  }
+}
+
 .small-card {
   background: #f6f6f6f6;
   padding: 1.5rem 0 1.5rem 3rem;
   border-radius: 1.3rem;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
 }
 
 .main-sections {
   padding: 2.2rem 1.4rem;
+}
+
+@media (min-width: 390px) {
+  .main-sections {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 690px) {
+  .main-sections {
+    padding: 10rem 0;
+  }
 }
 
 .section-location {
@@ -300,6 +362,14 @@ a {
   font-size: 0.9rem;
   font-weight: 700;
   color: #353535;
+  padding: 0.7rem 0.9rem;
+}
+
+@media (min-width: 690px) {
+  .section-location {
+    background: none;
+    font-size: 1.2rem;
+  }
 }
 
 .section-cta {
@@ -338,6 +408,28 @@ a {
           box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3), inset 0 -1.2rem 1rem rgba(146, 86, 220, 0.4);
 }
 
+@media (min-width: 390px) {
+  .section-cta__parag {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    padding: 3rem 0;
+  }
+  .section-cta__btn {
+    width: 15rem;
+    padding: 1.1rem;
+    font-size: 1.1rem;
+    border-radius: 1.5rem;
+  }
+}
+
+@media (min-width: 690px) {
+  .section-cta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 .section-tuto {
   font-size: 0.8rem;
   font-weight: 700;
@@ -363,23 +455,47 @@ a {
   color: #fff;
   font-size: 0.65rem;
   border-radius: 50%;
-  padding: 0.2rem;
-  width: 1rem;
-  height: 1rem;
-  text-align: center;
+  padding: 0.2rem 0.3rem;
 }
 
 .section-tuto__icon {
   font-size: 0.8rem;
   text-align: center;
+  bottom: 1.43rem;
 }
 
 .section-tuto__icon--purple {
   color: #9356dc;
 }
 
+@media (min-width: 390px) {
+  .section-tuto {
+    font-size: 1rem;
+  }
+  .section-tuto__card {
+    margin-bottom: 1.9rem;
+    padding-left: 3.6rem;
+  }
+  .section-tuto__number {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.4rem;
+    width: auto;
+    height: auto;
+  }
+  .section-tuto__icon {
+    bottom: 1.55rem;
+  }
+}
+
+@media (min-width: 690px) {
+  .section-tuto__header {
+    margin-bottom: 1.8rem;
+  }
+}
+
 .section-restaurants {
   background: #f6f6f6f6;
+  scroll-behavior: smooth;
 }
 
 .section-restaurants__header {
@@ -399,7 +515,7 @@ a {
   background: #fff;
   border-radius: 0.8rem;
   margin-bottom: 0.9rem;
-  max-width: 350px;
+  max-width: 30rem;
 }
 
 .section-restaurants__new {
@@ -512,6 +628,21 @@ a {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   cursor: pointer;
+}
+
+@media (min-width: 390px) {
+  .section-restaurants__card {
+    margin-bottom: 1.9rem;
+  }
+  .section-restaurants__image {
+    height: 12rem;
+  }
+}
+
+@media (min-width: 690px) {
+  .section-restaurants__header {
+    margin-bottom: 1.8rem;
+  }
 }
 
 .footer {

@@ -20,16 +20,16 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="main-container">
-        <!--
+      <!--
         ! LOADER !
       -->
-        <div class="loader-container">
-          <span class="loader"></span>
-        </div>
-        <!--
+      <div class="loader-container">
+        <span class="loader"></span>
+      </div>
+      <!--
         ! HEADER !
       -->
+      <div class="split container">
         <header class="main-header">
           <a href="#"
             ><img
@@ -39,28 +39,30 @@
           /></a>
         </header>
         <!--
-        ! SECTION LOCATION !
-      -->
+          ! SECTION LOCATION !
+        -->
         <section class="section-location">
-          <div class="container">
-            <span class="icon fas fa-map-marker-alt"></span>
-            Paris, Belleville
-          </div>
+          <span class="icon fas fa-map-marker-alt"></span>
+          Paris, Belleville
         </section>
-        <!--
+      </div>
+      <!--
         ! SECTION CALL TO ACTION !
       -->
-        <section class="main-sections section-cta">
-          <h3 class="section-cta__header big-header">Book the menu you like</h3>
-          <p class="section-cta__parag">
-            Discover top-of-the-art restaurants we picked for you
-          </p>
-          <a class="section-cta__btn" href="#"> Explore our restaurants</a>
-        </section>
-        <!--
+      <section class="main-sections section-cta">
+        <h3 class="section-cta__header big-header">Book the menu you like</h3>
+        <p class="section-cta__parag">
+          Discover top-of-the-art restaurants we picked for you
+        </p>
+        <a class="section-cta__btn" href="#section-restaurants">
+          Explore our restaurants</a
+        >
+      </section>
+      <!--
         ! SECTION TUTO !
       -->
-        <section class="main-sections section-tuto">
+      <section class="main-sections section-tuto">
+        <div class="container">
           <h3 class="section-tuto__header big-header">How it works</h3>
           <!--? small card 1 ?-->
           <div class="section-tuto__card small-card">
@@ -82,11 +84,16 @@
             ></span>
             Go enjoy it at the restaurant
           </div>
-        </section>
-        <!--
+        </div>
+      </section>
+      <!--
         ! SECTION RESTAURANTS !
       -->
-        <section class="main-sections section-restaurants">
+      <section
+        id="section-restaurants"
+        class="main-sections section-restaurants"
+      >
+        <div class="container">
           <h3 class="section-restaurants__header big-header">Restaurants</h3>
           <div class="section-restaurants__cards-container">
             <!--? big card 1 ?-->
@@ -268,12 +275,14 @@
               </div>
             </div>
           </div>
-        </section>
-        <!--
+        </div>
+      </section>
+      <!--
           ! FOOTER !
         -->
-        <footer class="footer">
-          <a href="/"></a>
+      <footer class="footer">
+        <div class="container">
+          <a href="#">
             <h1 class="footer__brand">ohmyfood</h1>
           </a>
           <nav class="footer__nav">
@@ -294,12 +303,12 @@
                 <a href="#"> Legal </a>
               </li>
               <li class="footer__li">
-                <a href="#"> Contact </a>
+                <a href="mailto:contact@ohmyfood.com"> Contact </a>
               </li>
             </ul>
           </nav>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

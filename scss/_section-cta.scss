@@ -2,8 +2,6 @@
   background: $light-grey;
   text-align: center;
 
-  &__header {
-  }
   &__parag {
     padding: 2rem 0;
     color: $light-black;
@@ -28,6 +26,36 @@
     &:hover {
       box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3),
         inset 0 -1.2rem 1rem rgba(146, 86, 220, 0.4);
+    }
+  }
+}
+
+@media (min-width: $baby-bear) {
+  .section-cta {
+    &__parag {
+      font-size: 1.1rem;
+      line-height: 1.3rem;
+      padding: 3rem 0;
+    }
+
+    &__btn {
+      width: 15rem;
+      padding: 1.1rem;
+      font-size: 1.1rem;
+      border-radius: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: $mama-bear) {
+  .section-cta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__parag {
+    }
+
+    &__btn {
     }
   }
 }

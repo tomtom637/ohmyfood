@@ -1,5 +1,6 @@
 .section-restaurants {
   background: $light-grey;
+  scroll-behavior: smooth;
 
   &__header {
     margin-bottom: 1.3rem;
@@ -15,7 +16,7 @@
     background: #fff;
     border-radius: 0.8rem;
     margin-bottom: 0.9rem;
-    max-width: 350px;
+    max-width: 30rem;
   }
 
   &__new {
@@ -106,5 +107,24 @@
     color: $secondary;
     transform: scaleY(0);
     cursor: pointer;
+  }
+}
+
+@media (min-width: $baby-bear) {
+  .section-restaurants {
+    &__card {
+      margin-bottom: 1.9rem;
+    }
+
+    &__image {
+      height: 12rem;
+    }
+  }
+}
+@media (min-width: $mama-bear) {
+  .section-restaurants {
+    &__header {
+      margin-bottom: 1.8rem;
+    }
   }
 }
