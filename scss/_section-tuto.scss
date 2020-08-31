@@ -58,7 +58,25 @@
 @media (min-width: $mama-bear) {
   .section-tuto {
     &__header {
-      margin-bottom: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    &__cards-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    &__card {
+      text-align: center;
+      padding-left: 0;
+      min-width: 16rem;
+      max-width: 40%;
+      flex: 1;
+    }
+    &__number {
+      top: -0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

@@ -177,6 +177,7 @@ a {
 
 .container {
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 @media (min-width: 690px) {
@@ -345,13 +346,13 @@ a {
 
 @media (min-width: 390px) {
   .main-sections {
-    padding: 4rem;
+    padding: 4rem 3rem;
   }
 }
 
 @media (min-width: 690px) {
   .main-sections {
-    padding: 10rem 0;
+    padding: 8rem 0;
   }
 }
 
@@ -489,7 +490,33 @@ a {
 
 @media (min-width: 690px) {
   .section-tuto__header {
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .section-tuto__cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .section-tuto__card {
+    text-align: center;
+    padding-left: 0;
+    min-width: 16rem;
+    max-width: 40%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .section-tuto__number {
+    top: -0.5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -502,20 +529,11 @@ a {
   margin-bottom: 1.3rem;
 }
 
-.section-restaurants__cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .section-restaurants__card {
   position: relative;
   background: #fff;
   border-radius: 0.8rem;
   margin-bottom: 0.9rem;
-  max-width: 30rem;
 }
 
 .section-restaurants__new {
@@ -637,11 +655,32 @@ a {
   .section-restaurants__image {
     height: 12rem;
   }
+  .section-restaurants__image--the-full-palette {
+    -o-object-position: 0 75%;
+       object-position: 0 75%;
+  }
 }
 
 @media (min-width: 690px) {
   .section-restaurants__header {
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .section-restaurants__cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-restaurants__card {
+    max-width: 48%;
+    margin-bottom: 2.7rem;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
   }
 }
 
@@ -667,4 +706,49 @@ a {
   padding-right: 0.5rem;
   font-size: 0.7rem;
   max-width: 1.1rem;
+}
+
+@media (min-width: 390px) {
+  .footer {
+    padding: 2.5rem 3rem;
+  }
+  .footer__brand {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .footer__ul {
+    position: relative;
+    padding-top: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__ul::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 2px;
+    top: 0;
+    left: 30%;
+    right: 30%;
+    background: #444;
+  }
+  .footer__li {
+    margin: 1rem;
+    position: relative;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .footer__logo {
+    position: absolute;
+    top: -1.2rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 0.9rem;
+  }
 }

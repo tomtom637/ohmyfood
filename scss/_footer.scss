@@ -21,3 +21,44 @@
     max-width: 1.1rem;
   }
 }
+
+@media (min-width: $baby-bear) {
+  .footer {
+    padding: 2.5rem 3rem;
+    &__brand {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    &__ul {
+      position: relative;
+      //border-top: 2px solid #444;
+      padding-top: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        height: 2px;
+        top: 0;
+        left: 30%;
+        right: 30%;
+        background: #444;
+      }
+    }
+    &__li {
+      margin: 1rem;
+      position: relative;
+      font-size: 0.9rem;
+      text-align: center;
+      line-height: 1.3;
+    }
+    &__logo {
+      position: absolute;
+      top: -1.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.9rem;
+    }
+  }
+}
