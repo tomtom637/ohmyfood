@@ -1,0 +1,32 @@
+.heart {
+  &__heart-container {
+    transform: scaleY(1.2);
+  }
+  &__checkbox {
+    display: none;
+
+    &:checked ~ .heart__full-heart {
+      transform: scale(1.05);
+      transition: all 800ms ease-in-out;
+    }
+  }
+  &__empty-heart {
+    font-size: 18px;
+    color: #999;
+    display: none;
+    transition: color 150ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+  &__full-heart {
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    color: $secondary;
+    transform: scaleY(0);
+    cursor: pointer;
+  }
+}

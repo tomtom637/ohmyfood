@@ -22,6 +22,7 @@
     border-radius: 0.2rem;
     right: 13px;
     top: 13px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
   &__image {
     height: 8.5rem;
@@ -59,36 +60,6 @@
   &__location {
     font-size: 0.9rem;
     color: $light-black;
-  }
-  &__heart-container {
-    transform: scaleY(1.2);
-  }
-  &__checkbox {
-    display: none;
-
-    &:checked ~ .section-restaurants__full-heart {
-      transform: scale(1.05);
-      transition: all 800ms ease-in-out;
-    }
-  }
-  &__empty-heart {
-    font-size: 18px;
-    color: #999;
-    display: none;
-    transition: color 150ms ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-      color: $secondary;
-    }
-  }
-  &__full-heart {
-    font-size: 18px;
-    position: absolute;
-    right: 0;
-    color: $secondary;
-    transform: scaleY(0);
-    cursor: pointer;
   }
 }
 
