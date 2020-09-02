@@ -16,17 +16,20 @@
   }
   &__number {
     position: absolute;
+    letter-spacing: 0;
+    line-height: 0;
     left: -0.5rem;
     background: $primary;
     color: #fff;
     font-size: 0.65rem;
     border-radius: 50%;
-    padding: 0.2rem 0.3rem;
+    padding: 0.5rem 0.35rem;
   }
   &__icon {
     font-size: 0.8rem;
     text-align: center;
     bottom: 1.43rem;
+    color: #777;
     &--purple {
       color: $primary;
     }
@@ -44,7 +47,7 @@
 
     &__number {
       font-size: 0.85rem;
-      padding: 0.2rem 0.4rem;
+      padding: 0.65rem 0.45rem;
       width: auto;
       height: auto;
     }
