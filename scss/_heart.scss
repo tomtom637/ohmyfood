@@ -1,4 +1,5 @@
 .heart {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   &__heart-container {
     transform: scaleY(1.2);
     overflow: hidden;

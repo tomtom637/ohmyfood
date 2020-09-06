@@ -407,6 +407,7 @@ a {
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   margin: 1rem auto 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
@@ -911,6 +912,10 @@ a {
     font-size: 2rem;
     margin-right: 2rem;
   }
+}
+
+.heart {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .heart__heart-container {
