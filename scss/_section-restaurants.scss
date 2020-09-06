@@ -1,6 +1,5 @@
 .section-restaurants {
   background: $light-grey;
-  scroll-behavior: smooth;
 
   &__header {
     margin-bottom: 1.3rem;
@@ -87,9 +86,14 @@
       justify-content: space-between;
     }
     &__card {
-      max-width: 48%;
-      margin-bottom: 2.7rem;
-      flex: auto;
+      flex: 1;
+      min-width: 45%;
+      &:nth-child(odd) {
+        margin-right: 1rem;
+      }
+      &:nth-child(even) {
+        margin-left: 1rem;
+      }
     }
   }
 }
