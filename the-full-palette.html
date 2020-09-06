@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Full Palette - Menu</title>
+    <meta
+      name="description"
+      content="Welcome to Oh my food! This is the Full Palette menu."
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/97e3147ee9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--
+          ! HEADER !
+        -->
+      <header class="main-header container">
+        <a href="index.html">
+          <div class="main-header__menu-header">
+            <span class="main-header__arrow fas fa-arrow-left"></span>
+            <img
+              class="main-header__logo"
+              src="assets/img/logo.svg"
+              alt="ohmyfood logo"
+            />
+          </div>
+        </a>
+      </header>
+      <!--
+        ! SECTION-MENU-IMAGE !
+      -->
+      <section class="section-menu-image">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="assets/img/the-full-palette-big.jpg"
+          />
+          <source
+            media="(min-width: 700px)"
+            srcset="assets/img/the-full-palette-medium.jpg"
+          />
+          <source srcset="assets/img/the-full-palette-small.jpg" />
+          <img
+            src="assets/img/the-full-palette-big.jpg"
+            alt="One of the many delicious Full Palette dish"
+            class="section-menu-image__image section-menu-image__the-full-palette"
+          />
+        </picture>
+      </section>
+      <!--
+        ! SECTION-MENU !
+      -->
+      <div class="container">
+        <section class="section-menu main-sections">
+          <div class="section-menu__restaurant-header">
+            <h2 class="section-menu__restaurant-name">The Full Palette</h2>
+            <div class="heart__heart-container">
+              <label
+                for="section-menu__checkbox-the-full-palette"
+                class="heart__label"
+              >
+                <span class="heart__empty-heart far fa-heart"></span>
+                <input
+                  type="checkbox"
+                  class="heart__checkbox"
+                  id="section-menu__checkbox-the-full-palette"
+                />
+                <span class="heart__full-heart fas fa-heart"></span>
+              </label>
+            </div>
+          </div>
+          <!--
+            ? FIRST COURSE ?
+          -->
+          <article class="section-menu__course">
+            <h3 class="section-menu__course-header">Entrees</h3>
+            <!-- ? 1st entree ? -->
+            <div class="menu-card">
+              <label for="escargot" class="input-dishes">
+                <div class="menu-card__flexed-items">
+                  <input
+                    type="checkbox"
+                    class="menu-card__checkbox"
+                    id="escargot"
+                  />
+                  <div class="menu-card__infos">
+                    <h4 class="menu-card__header">Escargot</h4>
+                    <div class="menu-card__desc-n-price">
+                      <p class="menu-card__desc">With southern French spices</p>
+                      <p class="menu-card__price">25€</p>
+                    </div>
+                  </div>
+                  <div class="menu-card__success-container">
+                    <span class="menu-card__success fas fa-check-circle"></span>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </article>
+          <!-- ? 2nd entree ? -->
+          <!-- ? 3rd entree ? -->
+        </section>
+      </div>
+      <!--
+          ! FOOTER !
+        -->
+      <footer class="footer">
+        <div class="container">
+          <a href="#">
+            <h1 class="footer__brand">ohmyfood</h1>
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li">
+                <a href="#">
+                  <span class="footer__logo fas fa-utensils"></span>
+                  Suggest a restaurant
+                </a>
+              </li>
+              <li class="footer__li">
+                <a href="#">
+                  <span class="footer__logo fas fa-hands-helping"></span>
+                  Become a partner
+                </a>
+              </li>
+              <li class="footer__li">
+                <a href="#"> Legal </a>
+              </li>
+              <li class="footer__li">
+                <a href="mailto:contact@ohmyfood.com"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

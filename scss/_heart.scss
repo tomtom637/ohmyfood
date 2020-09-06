@@ -1,6 +1,7 @@
 .heart {
   &__heart-container {
     transform: scaleY(1.2);
+    overflow: hidden;
   }
   &__checkbox {
     display: none;
@@ -24,7 +25,7 @@
   &__full-heart {
     font-size: 18px;
     position: absolute;
-    right: 0;
+    left: 0;
     color: $secondary;
     transform: scaleY(0);
     cursor: pointer;

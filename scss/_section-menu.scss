@@ -1,0 +1,57 @@
+.section-menu {
+  position: relative;
+  background: $light-grey;
+  border-radius: 1.5rem 1.5rem 0 0;
+  box-shadow: 2px -3px 5px rgba(0, 0, 0, 0.2);
+
+  &__restaurant-header {
+    background: $light-grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__restaurant-name {
+    font-size: 1.5rem;
+  }
+  &__course-header {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: $light-black;
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+  }
+  &__course-header::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 3rem;
+    height: 3px;
+    bottom: -0.1rem;
+    background: $tertiary;
+  }
+}
+
+@media (min-width: $baby-bear) {
+  .section-menu {
+    &__restaurant-name {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (min-width: $mama-bear) {
+  .section-menu > * {
+    padding: 0 2rem;
+  }
+  .section-menu {
+    border-radius: 2.5rem 2.5rem 0 0;
+    &__restaurant-header {
+      justify-content: start;
+    }
+    &__restaurant-name {
+      font-size: 2rem;
+      margin-right: 2rem;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.menu-card {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 0.6rem 0.8rem;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin: 1rem auto 0;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  &__flexed-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: padding 750ms ease-in-out;
+    cursor: pointer;
+  }
+  &__header {
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__desc-n-price {
+    display: inline-flex;
+  }
+  &__desc {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-right: 2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__price {
+    font-size: 0.8rem;
+    font-weight: 700;
+    //transform: translateX(-3rem);
+  }
+  &__success-container {
+    position: absolute;
+    right: 0;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $tertiary;
+    height: 100%;
+    transform: translateX(3rem);
+    transition: all 750ms ease-in-out;
+  }
+  &__success {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 750ms ease-in-out;
+  }
+  &__checkbox {
+    display: none;
+    &:checked ~ .menu-card__success-container {
+      transform: translateX(0);
+    }
+    &:checked ~ .menu-card__success-container > .menu-card__success {
+      transform: rotate(360deg);
+    }
+    &:checked ~ .menu-card__infos {
+      padding-right: 3rem;
+    }
+  }
+}

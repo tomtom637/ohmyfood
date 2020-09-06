@@ -1,0 +1,7 @@
+.section-menu-image {
+  margin-bottom: -2rem;
+  &__image {
+    object-fit: cover;
+    max-height: 20rem;
+  }
+}

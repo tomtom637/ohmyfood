@@ -1,16 +1,42 @@
 .main-header {
   padding: 0.5rem;
   box-shadow: 0 4px 3px rgba(0, 0, 0, 0.6);
-
   &__logo {
     height: 1.6rem;
+  }
+  &__menu-header {
+    position: relative;
+    &:hover .main-header__arrow {
+      animation: arrow-slide 1.8s cubic-bezier(0, 0, 0, 1.18) 2;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 1rem;
+    color: $light-black;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes arrow-slide {
+  0% {
+    opacity: 100%;
+    transform: translate(0, -50%);
+  }
+  100% {
+    opacity: 0%;
+    transform: translate(-2rem, -50%);
   }
 }
 
 @media (min-width: $baby-bear) {
   .main-header {
     padding: 1.5rem;
-
+    &__arrow {
+      font-size: 1.5rem;
+    }
     &__logo {
       height: 2.1rem;
     }
@@ -21,8 +47,10 @@
   .main-header {
     padding: 0;
     box-shadow: none;
-
-    &__logo {
+    &__menu-header {
+      display: flex;
+      align-items: center;
+      height: 5rem;
     }
   }
 }
