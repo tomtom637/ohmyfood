@@ -518,6 +518,7 @@ a {
 .menu-card__success-container {
   position: absolute;
   right: 0;
+  bottom: 0;
   width: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
