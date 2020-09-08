@@ -295,8 +295,8 @@ a {
 }
 
 .main-header__menu-header:hover .main-header__arrow {
-  -webkit-animation: arrow-slide 1.8s cubic-bezier(0, 0, 0, 1.18) 2;
-          animation: arrow-slide 1.8s cubic-bezier(0, 0, 0, 1.18) 2;
+  -webkit-animation: arrow-slide 1s ease-in-out 2;
+          animation: arrow-slide 1s ease-in-out 2;
 }
 
 .main-header__arrow {
@@ -311,27 +311,31 @@ a {
 
 @-webkit-keyframes arrow-slide {
   0% {
-    opacity: 100%;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
   }
-  100% {
-    opacity: 0%;
+  50% {
     -webkit-transform: translate(-2rem, -50%);
             transform: translate(-2rem, -50%);
+  }
+  100% {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
   }
 }
 
 @keyframes arrow-slide {
   0% {
-    opacity: 100%;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
   }
-  100% {
-    opacity: 0%;
+  50% {
     -webkit-transform: translate(-2rem, -50%);
             transform: translate(-2rem, -50%);
+  }
+  100% {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
   }
 }
 

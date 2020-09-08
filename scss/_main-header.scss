@@ -7,7 +7,7 @@
   &__menu-header {
     position: relative;
     &:hover .main-header__arrow {
-      animation: arrow-slide 1.8s cubic-bezier(0, 0, 0, 1.18) 2;
+      animation: arrow-slide 1s ease-in-out 2;
     }
   }
   &__arrow {
@@ -22,12 +22,13 @@
 
 @keyframes arrow-slide {
   0% {
-    opacity: 100%;
     transform: translate(0, -50%);
   }
-  100% {
-    opacity: 0%;
+  50% {
     transform: translate(-2rem, -50%);
+  }
+  100% {
+    transform: translate(0, -50%);
   }
 }
 
